@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="spinnerItemDistance">
+        <item>Meters</item>
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+</resources>
