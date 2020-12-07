@@ -7,6 +7,15 @@ android {
     buildToolsVersion "30.0.2"
     flavorDimensions "default"
 
+    signingConfigs {
+        relase {
+            storeFile file('C:\\Users\\nikit\\AndroidKeys\\mykey.jks')
+            storePassword '111111'
+            keyAlias 'myConverter'
+            keyPassword '111111'
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.myconverter"
         minSdkVersion 27
@@ -32,11 +41,11 @@ android {
     productFlavors{
 
         freeFlavors{
-
+            signingConfig signingConfigs.relase
         }
 
         paidFlavour{
-
+            signingConfig signingConfigs.relase
         }
     }
 }
